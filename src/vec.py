@@ -13,9 +13,7 @@ def getitem(v, k):
     0
     """
     assert k in v.D
-    if k in v.f.keys():
-        return v.f[k]
-    return 0
+    return v.f[k] if k in v.f else 0
 
 
 def setitem(v, k, val):
